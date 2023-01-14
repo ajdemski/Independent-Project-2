@@ -1,38 +1,77 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
-  <link rel="stylesheet" href="css/styles.css" type="text/css">
-  <script src="js/scripts.js"></script>
-  <title>Aarons Independent Project 2</title>
-</head>
-  <h1>Programming Language Suggester</h1>
-    <body>
-    <div>
-      <div class="question">
-        <h2>Question 1</h2>
-        <p>Snake</p>
-        <p>Dove</p>
-        <p>Leopard</p>
-      </div>
-      
-      <div class="question">
-        <h2>Question 2</h2>
-        <p>ghfghgfhfghf</p>
-        <p>dasd</p>
-        <p>dsad</p>
-      </div>
-      
-      <div class="question">
-        <h2>Question 3</h2>
-        <p>fhgdfh</p>
-        <p>dasd</p>
-        <p>dasd</p>
-      </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Programming Language Suggester</title>
+    <link rel="stylesheet" href="css\styles.css">
+  </head>
+  <body>
+    <header>
+      <h1>Programming Language Suggester</h1>
+    </header>
+
+    <section class="container">
+      <form id="my-form">
+        <h1>What would you want to code?</h1>
+        <div class="msg"></div>
+        <div>
+          <label for="answer1">1. Video Games</label>
+          <label for="answer2">2. Websites</label>
+          <label for="answer3">3. Applications</label>
+          <input type="text" id="answer1">
+        </div>
+        
+      </form>
+
+      <ul id="suggested-language"></ul>
+
+      </section>
+      <section class="container">
+        <form id="my-form">
+          <h1>What is your favorite animal?</h1>
+          <div class="msg"></div>
+          <div>
+            <label for="answer34">1. Fox</label>
+            <label for="answer23">2. Elephant</label>
+            <label for="answer12">3. Leopard</label>
+            <input type="text" id="answer2">
+          </div>
+          
+        </form>
+  
+        <ul id="suggested-language"></ul>
+  
+      </section>
+      <section class="container">
+        <form id="my-form">
+          <h1>Would you rather...</h1>
+          <div class="msg"></div>
+          <div>
+            <label for="answer123">1. Go skydiving</label>
+            <label for="answer345">2. Go take a nap</label>
+            <label for="answer234">3. Go for a nice bike ride on the beach</label>
+            <input type="text" id="answer3">
+          </div>
+            
+        </form>
     
-    </div>
+        <ul id="suggestedlanguage"></ul>
+        
+        </section>
+      <footer>
+        <input class="btn" type="submit" value="Submit">
+        
+        <ul class="languages">
+          <li class="language3">Ruby</li>
+          <li class="language1">C#</li>
+          <li class="language2">Java</li>
+        </ul>
+      </footer>
+
+
+
+      <script src="js\scripts.js"></script>
   </body>
-<footer>
-<input id="q1" type="text">
-<input id="q2" type="text">
-<input id="q3" type="text">
-<button type="submit">Submit</button>
+</html>
